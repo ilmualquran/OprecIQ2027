@@ -1,5 +1,5 @@
 <title>Open Recruitment IQ 2027</title>
-<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Source+Sans+3:wght@400;500;600&display=swap">
@@ -211,6 +211,70 @@
     .pill, .soc a { transition: none; }
     .pill:hover, .pill:active { transform: none; }
   }
+  /* RESPONSIVE UNTUK HP */
+@media screen and (max-width: 600px) {
+  .page {
+    width: 100%;
+    max-width: 520px;
+    padding: 24px 18px;
+    margin: 0 auto;
+    gap: 22px;
+    box-sizing: border-box;
+  }
+
+  .crest {
+    width: 112%;
+    max-width: none;
+    height: auto;
+    margin-left: -6%;
+  }
+
+  h1 {
+    font-size: clamp(2.55rem, 12vw, 3.65rem);
+    line-height: 1.04;
+    margin: 0;
+  }
+
+  .pill {
+    width: 100%;
+    min-height: 60px;
+    padding: 14px 18px;
+    font-size: clamp(1rem, 4.5vw, 1.2rem);
+    box-sizing: border-box;
+  }
+}
+
+/* RESPONSIVE UNTUK HP LAYAR KECIL */
+@media screen and (max-width: 360px) {
+  .page {
+    padding: 20px 14px;
+    gap: 18px;
+  }
+
+  .crest {
+    width: 108%;
+    margin-left: -4%;
+  }
+
+  h1 {
+    font-size: clamp(2.25rem, 11.5vw, 2.8rem);
+    line-height: 1.05;
+  }
+
+  .pill {
+    min-height: 56px;
+    padding: 12px 14px;
+    font-size: 0.95rem;
+  }
+}
+
+/* RESPONSIVE UNTUK TABLET DAN LAPTOP */
+@media screen and (min-width: 601px) {
+  .page {
+    max-width: 520px;
+    margin: 0 auto;
+  }
+}
 </style>
 
 <div class="page">
